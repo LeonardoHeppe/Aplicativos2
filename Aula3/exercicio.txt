@@ -1,0 +1,41 @@
+void main() {
+  print("Exercicio 1");
+  String nome = "Leonardo";
+  String sobrenome = "Santos";
+  int idade = 18;
+  String endereco = "Rua Lorem";
+  print("Dados do Individuo\nNome: $nome\nSobrenome: $sobrenome\nIdade: $idade\nEndereço: $endereco\n");
+  
+  print("Exercicio 2");
+  double entrada = 14.99;
+  int pessoas = 4;
+  double resultado = entrada*pessoas;
+  print("Valor da entrada: R\$$entrada\nNumero de pessoas: $pessoas\nValor arrecadado: R\$$resultado\n");
+  
+  print("Exercicio 3");
+  double area,areaMaior,areaMenor,altura;
+  areaMaior = 2;
+  areaMenor = 3;
+  altura = 2.7;
+  print("Área maior: $areaMaior\nÁrea menor: $areaMenor\nAltura: $altura");
+  area = ((areaMaior+areaMenor)*altura)/2;
+  print("Área do trapézio: $area\n");
+  
+  print("Exercicio 4");
+  double ladoQuadrado = 3.5;
+  double areaQuadrado = ladoQuadrado*ladoQuadrado;
+  print("Lado: $ladoQuadrado\nÁrea do quadrado: $areaQuadrado\n");
+  
+  print("Exercicio 5");
+  List<String> nomes = ["Leo","Eduardo","Claudia","Paula"];
+  for(int i=0;i<nomes.length;i++){
+    for(int b=0;b<nomes.length;b++){
+      if(nomes[i] == nomes[b]){
+        print("Comparando "+nomes[i]+" e "+nomes[b]+", são a mesma pessoa.");
+      }
+      else{
+        print("Comparando "+nomes[i]+" e "+nomes[b]+", os nomes não conferem.");
+      }
+    }
+  } 
+}
