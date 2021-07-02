@@ -1,0 +1,162 @@
+void main() {
+  print("Exercicio 1");
+  var numeros = [1,2,3,4,5,-12,10,-10,-15,-50,29];
+  for (var i=0;i<numeros.length;i++){
+    if(numeros[i]>0){
+      print(numeros[i].toString()+" :Número é positivo!");
+    }
+    else if(numeros[i]<0){
+      print(numeros[i].toString()+" :Número é negativo!");
+    }
+    else{
+      print(numeros[i]);
+      print(numeros[i].toString()+" :Número é neutro!");
+    }
+  }
+  print("\nExercicio 2");
+  var numDois = 2;
+  var numUm = 1;
+  print("Primeiro número: $numUm Segundo número: $numDois.");
+  if(numUm>numDois){
+    print("Primeiro número é maior que o segundo.");
+  }
+  else if(numUm<numDois){
+    print("Segundo número é maior que o primeiro.");
+  }
+  else{
+    print("Números são iguais.");
+  }
+  print("\nExercicio 3");
+  var a = 2;
+  var b = 4;
+  var c = 5;
+  var calculoUm = a + b * c;
+  print("Resultado do primeiro calculo: $calculoUm.");
+  var calculoDois = b / a * c;
+  print("Resultado do segundo calculo: $calculoDois.");
+  if(calculoUm == calculoDois){
+    print("Resultados dos calculos são iguais.");
+  }
+  else{
+    print("Resultados dos calculos são diferentes.");
+  }
+  print("\nExercicio 4");
+  var notaUm = 6;
+  var notaDois = 6;
+  if(((notaUm+notaDois)/2)>=6){
+    print("Aprovado.");
+  }
+  else{
+    print("Reprovado.");
+  }
+  print("\nExercicio 5");
+  notaUm = 6;
+  notaDois = 6;
+  var notaTres = 6;
+  if(((notaUm+notaDois+notaTres)/3)>=7){
+    print("Aprovado.");
+  }
+  else if(((notaUm+notaDois+notaTres)/3)>=6){
+    print("Exame.");
+  }
+  else {
+    print("Reprovado.");
+  }
+  print("\nExercicio 6");
+  notaUm = 7;
+  notaDois = 7;
+  notaTres = 7;
+  var notaQuatro = 7;
+  var media = (notaUm+notaDois+notaTres+notaQuatro)/4;
+  if(media>=9){
+    print("Aprovado, Conceito A!");
+  }
+  else if(media>=8){
+    print("Aprovado, Conceito B!");
+  }
+  else if(media>=7){
+    print("Aprovado, Conceito C!");
+  }
+  else{
+    print("Reprovado, Conceito F!");
+  }
+  print("\nExercicio 7");
+  var peso = 110;
+  var altura = 1.83;
+  var imc = peso /(altura*altura);
+  if(imc<16){
+    print("Magreza grave!");
+  }
+  else if(imc<17){
+    print("Magreza moderada!");
+  }
+  else if(imc<18.5){
+    print("Magreza leve!");
+  }
+  else if(imc<25){
+    print("Saudável!");
+  }
+  else if(imc<30){
+    print("Sobrepeso!");
+  }
+  else if(imc<35){
+    print("Obesidade GRAU I!");
+  }
+  else if(imc<40){
+    print("Obesidade GRAU II(Severa)!");
+  }
+  else {
+    print("Obesidade GRAU III(Mórbida)!");
+  }
+  print("\nExercicio 8");
+  var saldo = 1000;
+  var saque = 900;
+  if(saldo>=saque){
+    saldo -= saque;
+    print("Saque efetuado com sucesso!");
+    print("Novo saldo: R\$$saldo.");
+  }
+  else{
+    print("Saldo indisponível!");
+  }
+  print("\nExercicio 9");
+  var idade = 21;
+  if(idade < 13){
+    print("Criança.");    
+  }
+  else if(idade < 22){
+    print("Jovem.");    
+  }
+  else if(idade < 60){
+    print("Adulto.");    
+  }
+  else{
+    print("Terceira Idade.");
+  }
+  print("\nExercicio 10");
+  peso = 60;
+  if(peso < 61){
+    print("Tamanho ideal P!");
+  }
+  else if(peso < 75){
+    print("Tamanho ideal M!");
+  }
+  else if(peso < 86){
+    print("Tamanho ideal G!");
+  }
+  else{
+    print("Tamanho ideal GG!");
+  }
+  print("\nExercicio 11");
+  double salario = 1200;
+  print("Salario: R\$$salario.");
+  var dissidio = 1.04;
+  var tempo = 2;
+  if(tempo < 1){
+    print("Funcionário com menos de 1 ano de empresa.");
+  }
+  else{
+    salario *= dissidio;
+    print("Salario novo: R\$$salario.");
+  }
+}
