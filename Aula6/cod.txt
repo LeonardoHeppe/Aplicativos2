@@ -1,0 +1,88 @@
+void main() {
+  print("Exercicio 1");
+  var resultado = "";
+  for(int i = 0; i<=100;i++){
+    if(i<100){
+      resultado += "$i, ";
+    }
+    else{
+      resultado += "$i.";
+    }
+  }
+  print(resultado);
+  print("\nExercicio 2");
+  List<int> numeros = [11,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10,2,3,4,5,6,7,8,9,10];
+  int maiorNumero = numeros[0];
+  resultado = "";
+  for(int i = 0; i < numeros.length; i++){
+    if(i == (numeros.length-1)){
+      resultado += numeros[i].toString()+". ";
+    }
+    else{
+      resultado += numeros[i].toString()+", ";
+    }
+    if(numeros[i]>maiorNumero){
+      maiorNumero = numeros[i];
+    }
+  }
+  print(resultado);
+  print(maiorNumero);
+  print("\nExercicio 3");
+  int numUm = 10;
+  int numDois = 20;
+  int resultadoInteiro = 0;
+  do{
+    print(resultadoInteiro);
+    resultadoInteiro += numUm * numDois;
+  }while(resultadoInteiro<=1200);
+  print("\nExercicio 4");
+  int k = 1;
+  do{
+    if(k%2==0){
+      print(k);
+    }
+    k++;
+  }while(k<=10);
+  print("\nExercicio 5");
+  List<double> mediaAlunos = [6,6,6,7,8,9,9,9,9.5,0];
+  double mediaTurma = 0;
+  for(int i = 0; i<mediaAlunos.length;i++){
+    mediaTurma += mediaAlunos[i];
+    if(i==(mediaAlunos.length-1)){
+      mediaTurma /= mediaAlunos.length;
+    }
+  }
+  print(mediaTurma);
+  print("\nExercicio 6");
+  int valor = 5;
+  for(int i=0;i<10;i++){
+    print(valor.toString()+" x "+(i+1).toString()+" = "+(valor*(i+1)).toString());
+  }
+  print("\nExercicio 7");
+  List<double> alturas = [1.6,1.78,1.83,1.65,1.77,1.9,1.81,1.92,1.89,1.66,1.76,1.70,1.86,1.8,1.96];
+  double mediaAltura = 0;
+  double maiorAltura = alturas[0];
+  double menorAltura = alturas[0];
+  for(int i = 0; i<alturas.length;i++){
+    print(alturas[i]);
+    mediaAltura += alturas[i];
+    if(alturas[i]>maiorAltura){
+      maiorAltura = alturas[i];
+    }
+    if(alturas[i]<menorAltura){
+      menorAltura = alturas[i];
+    }
+    if(i==(alturas.length-1)){
+      mediaAltura /= alturas.length;
+    }
+  }
+  print("Altura media: "+mediaAltura.toStringAsFixed(2)+", Maior altura: $maiorAltura, Menor altura: $menorAltura.");
+  print("\nExercicio 8");
+  int a = 5;
+  print(a);
+  for(int i = a-1;i>0;i--){
+    a *= i;
+  }
+  
+  print("Resultado $a");
+  }
