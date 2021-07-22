@@ -1,0 +1,128 @@
+void main() {
+  int retornaMaior (int a, int b){
+    if(a>b){
+      return a;
+    }
+    else{
+      return b;
+    }
+  }
+  print("Resultado 01: "+retornaMaior(1,2).toString());
+  bool retornaVerdadeiro(int a){
+    if (a<=0){
+      return false;
+    }
+    else{
+      for (var i = 2; i<a; i++){
+        if (a%i == 0){
+          return false;
+        }
+      }
+      return true;
+    }
+  }
+  print("Resultado 02: "+retornaVerdadeiro(4).toString());
+  bool retornaPositivo(int a){
+    if (a>0){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+  print("Resultado 03: "+retornaPositivo(2).toString());
+  double mediaValores(List<int> a){
+   double b = 0;
+    for(int i=0;i<a.length;i++){
+      b+=a[i];
+    }
+    b/= a.length;
+    return b;
+  }
+  print("Resultado 04: "+mediaValores([3,4,5,6,7]).toString());
+  int somarPositivos(int a, int b){
+    if(a<0 || b<0){
+      return 0;
+    }
+    else{
+      a+=b;
+    return a;
+    }
+  }
+  print("Resultado 05: "+somarPositivos(2,3).toString());
+  String nadadeiro(int a){
+    if (a<5){
+      return "Idade "+a.toString()+", Girino.";
+    }
+    else if (a<=7){
+      return "Idade "+a.toString()+", Infantil A.";
+    }
+    else if (a<=10){
+      return "Idade "+a.toString()+", Infantil B.";
+    }
+    else if (a<=13){
+      return "Idade "+a.toString()+", Juvenil A.";
+    }
+    else if (a<=17){
+      return "Idade "+a.toString()+", Juvenil B.";
+    }
+    else{
+      return "Idade "+a.toString()+", Adulto.";
+    }
+  }
+  print("Resultado 06: "+nadadeiro(5));
+  int parOuImpar(int a){
+    if(a % 2 == 0){
+      return 1;
+    }
+    else{
+      return 0;
+    }
+  }
+  print("Resultado 07: "+parOuImpar(2).toString());
+  String maisDoMesmo(double a, double b){
+    String resultado = "";
+    resultado += "Soma: "+(a+b).toString();
+    resultado += " Produto do primeiro número pelo quadrado do segundo: "+(a*(b*b)).toString();
+    resultado += " Quadrado do primeiro número: "+(a*a).toString();
+    resultado += " Triplo do dobro da soma dos dois números: "+(((a+b)*2)*3).toString();
+    resultado += " Metade do triplo do dobro da soma dos dois números: "+((((a+b)*2)*3)/2).toString();
+    if(a>0){
+      resultado += " Modulo: "+(a*1).toString();
+    }
+    else{
+      resultado += " Modulo: "+(a*-1).toString();
+    }
+    return resultado;
+  }
+  print("Resultado 08: "+maisDoMesmo(-22,3));
+  String arrayNumerico(int a, int b){
+    String resultado="";
+    if(a>b){
+      for (int i=a;i>=b;i--){
+        if (i>b){
+          resultado+=i.toString()+", ";
+        }
+        else{
+          resultado+=i.toString()+".";
+        }
+      }
+      return resultado;
+    }
+    else if(a==b){
+      return "números iguais.";
+    }
+    else{
+      for (int i=b;i>=a;i--){
+        if (i>a){
+          resultado+=i.toString()+", ";
+        }
+        else{
+          resultado+=i.toString()+".";
+        }
+      }
+      return resultado;
+    }
+  }
+  print("Resultado 09: "+arrayNumerico(1,10));
+}
